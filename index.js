@@ -19,3 +19,12 @@ app.post('/mensaje', (req, res) => {
 app.listen(port, () => { 
     console.log(`Servidor escuchando en http://localhost:${port}`); 
 });
+
+app.get('/usuarios', (req, res) => {
+    const usuarios = [
+        { id: 1, nombre: 'Juan' },
+        { id: 2, nombre: 'María' },
+        { id: 3, nombre: 'Carlos' }
+    ];
+    res.json(usuarios);
+});
