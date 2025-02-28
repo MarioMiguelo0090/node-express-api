@@ -13,7 +13,8 @@ app.get('/saludo/:nombre', (req, res) => {
 }); 
 
 app.post('/mensaje', (req, res) => { 
-    res.json({ mensaje: `Recibido: ${req.body.mensaje}` }); 
+    res.send("Mensaje recibido :)");
+    res.status(404).json(req.body);
 }); 
 
 app.listen(port, () => { 

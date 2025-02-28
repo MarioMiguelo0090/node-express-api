@@ -1,0 +1,7 @@
+POST http://localhost:3000/Mensaje
+Content-Type:  application/json
+
+{
+    "nombre": "Christopher",
+    "Saludo": "Les mando un fuerte saludo a todos"
+}
